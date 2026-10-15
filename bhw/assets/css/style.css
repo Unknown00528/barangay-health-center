@@ -1,0 +1,39 @@
+.app-shell {
+    min-height: 100vh;
+    background: #f5f8f7;
+}
+.topbar {
+    min-height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+.sidebar {
+    width: 250px;
+    min-height: calc(100vh - 58px);
+    flex-shrink: 0;
+}
+.sidebar .nav-link:hover {
+    background: rgba(255,255,255,.1);
+}
+.sidebar .nav-link.active {
+    background: #198754;
+    border-radius: 8px;
+}
+.sidebar .nav-link i {
+    width: 24px;
+    display: inline-block;
+}
+.card {
+    border-radius: 12px;
+    border: 0;
+}
+.table th {
+    white-space: nowrap;
+}
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 250px;
+        min-height: 100vh;
+    }
+}
